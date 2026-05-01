@@ -4,17 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
+
+    <style>
+      body {
+        background-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #nav-links a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: black;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <h1>Musthak</h1>
-      <nav>
-        <a href="home">Home</a>
-        <a href="about">About</a>
-        <a href="skills">Skills</a>
-        <a href="works">Works</a>
-        <a href="contact">Contact</a>
+
+      <nav id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
+
+    <main>
+      <section id="home">
+        <h2>Hi, I'm Musthak - Web Designer</h2>
+        <a href="#contact">Contact Me</a>
+        <br /><br />
+        <img src="profile.jpg" alt="Musthak profile photo" width="200" />
+      </section>
+
+      <section>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">GitHub</a>
+      </section>
+
+      <section id="about"><h2>About</h2></section>
+      <section id="skills"><h2>Skills</h2></section>
+      <section id="works"><h2>Works</h2></section>
+      <section id="contact"><h2>Contact</h2></section>
+    </main>
   </body>
 </html>
