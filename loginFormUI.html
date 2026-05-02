@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form UI</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #form-group {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="form-group">
+        <form method="post" action="#">
+          <h2>Login</h2>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            required
+            name="email"
+            placeholder="Enter email"
+          />
+          <br />
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter password"
+          />
+          <br />
+          <input type="checkbox" id="show-password" />
+          <label for="show-password">Show Password</label> <br />
+          <br />
+          <button type="submit">SIGN IN</button>
+          <p>
+            Forgot
+            <a href="#">Username</a> / <a href="#">Password</a>?
+          </p>
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
